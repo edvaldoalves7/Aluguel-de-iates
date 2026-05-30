@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: rgb(0, 35, 68);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.logo-texto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-texto img {
+  height: 40px;
+}
+
+.logo-texto .textos {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.luxo {
+  font-style: italic;
+  color: #00aaff;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.aluguel {
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  font-size: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+nav ul li:hover {
+  color: #00aaff;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "|";
+  margin-left: 15px;
+  color: #555;
+}
+
+.banner {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.texto-banner {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px 30px;
+  max-width: 350px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto-banner p {
+  margin: 0 0 10px 0;
+}
+
+.texto-banner .telefone {
+  font-weight: bold;
+  color: #f0c674;
+}
+
+.info-sections {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.info-box {
+  flex: 1;
+  background-color: rgb(0, 35, 68);
+  padding: 20px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 5px solid;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.icone-ancora {
+  width: 24px;
+  height: 24px;
+}
+
+.titulo {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.destinos .header-box {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+.frota .header-box {
+  border-color: #c9b27f;
+  color: #c9b27f;
+}
+
+.descricao {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #fffdfd;
+  margin-bottom: 20px;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.fotos img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  height: 120px;
+}
